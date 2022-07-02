@@ -1,0 +1,11 @@
+#upcoming,
+#duedate,
+#priorities li {
+    list-style-type: none;
+}
+
+li label {
+    padding: 20px;
+}
+
+.delete {}
