@@ -14,9 +14,10 @@ function addtask() {
     console.log("click");
 
     var newtask = task.value;
-    if (newtask.length > 0) {
+    var newdate = date.value;
+    if (newtask.length > 0 && newdate.length>0) {
         console.log(newtask);
-        var newdate = date.value;
+        
         console.log(newdate);
         var setdate = new Date(newdate);
 
@@ -65,6 +66,8 @@ function addtask() {
             li.appendChild(remaindday);
             li.appendChild(deletebtn);
             upcoming.appendChild(li);
+            task.value=" ";
+            date.value=" ";
         }
         else {
             console.log("dudate");
@@ -78,6 +81,8 @@ function addtask() {
             li.appendChild(remaindday);
             li.appendChild(deletebtn);
             duedate.appendChild(li);
+            task.value=" ";
+            date.value=" ";
         }
 
     }
